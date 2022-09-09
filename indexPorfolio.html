@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Maria Soledad Almiron">
+	<title>Prueba Porfolio: Sitio Web sencillo</title>
+	<link rel="stylesheet" type="text/css"
+	href="Hoja de estilo prueba.css"/>
+	<style type="text/css">
+		body{font-family: Arial; color:black}
+		h1{font-family: Verdana;}
+		p{ color:rgb(255, 123, 0) (0, 0, 0) (255, 0, 0);}
+	    
+	</style>
+</head>
+<body>
+	<body class="light-theme"></body>
+	<div class="card mat-card" id="first-card">
+		<div id="menu">
+			<nav class="nav-default" role="navigation"></nav>
+		</div>
+		<div id="profile-background"><img src="Imagen_porfolio.png" width="1500" height="325">
+		<div id="info" style="padding: 18px"></div>
+		</div>
+		</div>
+		<h1>Curso FrontEnd. Prueba</h1>
+			<p id="destacado"> Yo programo en Argentina programa</p>
+	    	<p>Comenzaremos el Modulo N°2 donde nos enseñaron HTML, CSS, Javascript,y TypeScript</p>
+			<p class="destacado"> Ver modulo 2.</p>
+		<h2>1.1 HTML</h2>
+			<p>El <span class="destacado">HTML</span>describe la estructura y el contenido de una pagina Web</p>
+		<h2>1.2 Introducción al CSS</h2>
+			<p> <span class="destacado">CSS</span> en un lenguaje que trabaja junto con HTML para proporcionar estilos visuales
+				a los elementos de un documento web.</p>
+		<ol type="a">
+			<li>Agregar estilos visuales</li>
+			<li>Agregar temas claros y oscuros</li>
+			<li>Agregar tareas</li>
+		</ol>
+		<h2>1.3 JavaScript</h2>
+		<p id="text-acercade"> Es un placer estudiar en Argentina Programa</p>
+		<script>
+			function cambiar_parrafo(){
+				document.getElementById("edit-acercade").style.display="block";
+				let texto= document.getElementById("text-acercade").innerText;
+				console.log(texto);
+			};
+
+			function myFunction2(valor){
+				document.getElementaryId("text-acercade").innerText=valor;
+			};
+
+			function logMessage(message){
+				console.log(message +"<br>");
+			}
+
+			
+			
+		</script>
+		<div class="card mat-card">
+			<div class="card-titles">
+				<h2>Acerca de</h2>
+			<div class="btn-edit" onclick="cambiar_parrafo()">
+				<a href="#" class="btn-right">
+					<i class="fa fa-pen"></i>
+				</a>
+			</div>
+			</div>
+		</div>
+			<p id="text-acercade"> Estamos transitando por un momento de alfabetización tecnologica en el mundo</p>
+		</div>
+	<div>
+		<input id="edit-acercade" type="text" oninput="myFunction2(this.value)" style="display:none">
+	</div>
+</div>
+	<input type="file" id="file1" onchange="showFile(this)">
+
+	<div class="card mat-card"> <div id="Nombre"></div> </div>
+	<div class="card mat_card"> <div id="Apellido"></div> </div>
+	<div class="card mat_card"> <div id="Titulos"></div> </div>
+
+	<input type="file" id="file1" onchange="showFile1(this)">
+	<div id="info"	style= "padding: 16px"> </div>
+	<div id="info-actions">
+		<button type="button" class="btn btn-primary"> Tengo Interés en</button>
+		<button type="button" class="btn btn-light">Mis Habilidades son</button>
+		<button type="button" class="btn btn-light">Añadir sección</button>
+	</div>
+	
+	<script>
+		function foo() {
+			var undefined =2; // bad idea!
+			console.log(undefined*2);
+			var newContent = document.createElement ("div");
+			var newContent = document.createTextNode("Incluimos JavaScript a la página");
+			newDiv.appendChild(newContent); // añade texto al div creado.
+			//añade el elemnto creado y su contenido al Dom
+			var currentDiv = document.getElementById("1");
+			document.body.insertBefore(newDiv, currentDiv);
+		}
+		foo();
+	</script>
+</body>
+</html>
+		
+        
