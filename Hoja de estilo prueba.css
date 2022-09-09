@@ -1,0 +1,25 @@
+h1 {
+    font-size: 28px;
+    color: blueviolet
+}
+b {
+    color: green;
+}
+.destacado {
+    color: rgb(136, 255, 0);
+    font-weight: bold
+}
+
+#destacado {
+    color: blueviolet;
+}
+.mat-card {
+    border-radius: 32px;
+    margin: 300px 10px;
+    padding: 80px;
+    border-color:rgb(136, 255, 0)
+}
+.light-theme {
+    background-color: darkkhaki;
+
+}
