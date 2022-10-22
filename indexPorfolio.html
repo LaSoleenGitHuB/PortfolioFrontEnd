@@ -10,14 +10,59 @@
 		intigrity="sha384-ggOyR01XCbMQv3Xipma34MD+dH/1fQ784/j6cV/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonimous">
 		
 		<title>Prueba Porfolio: Sitio Web sencillo</title>
+		<link rel="stylesheet" type="text/css" href="Diseñoporfolionuevo.png" alt="imagen de mesa de trabajo con cuaderno" title="foto de proyecto">
+		
+		
+		
 		<link rel="stylesheet" type="text/css"
-		href="Hoja de estilo prueba.css"/>
+		href="Hoja de estilo prueba.css" alt="imagen de cuaderno sobre mesa de trabajo" title="foto de proyecto"/>
 		
 			
 	</head>
 	<body>
-
-		<h1>Argentina Programa modulo N°2 #Yo Programo-</h1>
+		<!--Menu-->
+		<ul>
+			<li><a href="default.asp">Inicio</a></li>
+			<li><a href="default.asp">Contenido</a></li>
+			<li><a href="default.asp">Contacto</a></li>
+		</ul>
+		<hr/>
+		
+		<!--Contenido-->
+		<body class="light-theme"></body>
+		<div class="card mat-card" id="first-card">
+		<div id="menu">
+			<nav class="nav-default" role="navigation"></nav>
+		</div>
+		<div id="profile-background">
+			<center><img src="Diseño sin título.png" width=25% height="250"></center>
+		<div id="info" style="padding: 18px"></div>
+		</div>
+		</div>
+		<div class="card mat-card" id="first-card">
+			<div id="profile-background"> 
+				<div id="info"	style= "padding: 5px"> </div>
+				<div id="info-actions">
+					<button type="button" class="btn btn-primary"> Tengo Interés en</button>
+					<button type="button" class="btn btn-light">Mis Habilidades son</button>
+					<button type="button" class="btn btn-light">Añadir sección</button>
+				</div>
+			</div>
+			</div>
+		<strong><hr/></strong>
+		<div class="card mat-card">
+			<div class="card-titles">
+				<h1>Acerca de</h1>
+				<p><em>Estudiante de Argentina Programa<strong>#Yo Programo</strong></em></p>
+				<div class="btn-edit" onclick="cambiar_parrafo()">
+					<a href="#" class="btn-right">
+							<i class="fa fa-pen"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+				
+		<h1>Argentina Programa </h1>
 		<h3>Prueba basica</h3>
 		<div class="conteiner">
 			<div class="row">
@@ -27,8 +72,8 @@
 				Encabezado
 			</div>
 			<div class="card-body">
-				<h5 class="card-title">Ejemplo de bootStrap</h5>
-				<p class="card-text">Bootstrap es un framework front-end utilizado para desarrollar aplicaciones web y sitios mobiles</p>
+				<h5 class="card-title">Mis Habilidades Duras y Blandas</h5>
+				<p class="card-text"> Habilidades Blandas</p>
 		<a href="#" class="btn btn-primary">Go somewhere</a>
 			</div>
 			<div class="card-footer"></div>
@@ -38,31 +83,14 @@
 		</div>
 		<body class="light-theme"></body>
 		<div class="card mat-card" id="first-card">
+			<h1>Estudios</h1>
 		<div id="menu">
 			<nav class="nav-default" role="navigation"></nav>
 		</div>
-		<div id="profile-background"><img src="Imagen_porfolio.png" width="500" height="325">
-		<div id="info" style="padding: 18px"></div>
 		</div>
-		</div>
-		<h1>Curso FrontEnd. Prueba</h1>
-			<p id="destacado"> Yo programo en Argentina programa</p>
-	    	<p>Comenzaremos el Modulo N°2 donde nos enseñaron HTML, CSS, Javascript,y TypeScript</p>
-			<p class="destacado"> Ver modulo 2.</p>
-		<h2>1.1 HTML</h2>
-			<p>El <span class="destacado">HTML</span>describe la estructura y el contenido de una pagina Web</p>
-		<h2>1.2 Introducción al CSS</h2>
-			<p> <span class="destacado">CSS</span> en un lenguaje que trabaja junto con HTML para proporcionar estilos visuales
-				a los elementos de un documento web.</p>
-		<ol type="a">
-			<li>Agregar estilos visuales</li>
-			<li>Agregar temas claros y oscuros</li>
-			<li>Agregar tareas</li>
-		</ol>
-		<h2>1.3 JavaScript</h2>
-		<p id="text-acercade"> Es un placer estudiar en Argentina Programa</p>
+		
 		<script>
-			alert('hola mundo');
+			alert('Hola: Bienvenido/a a mi portfolio');
 			function cambiar_parrafo(){
 				document.getElementById("edit-acercade").style.display="block";
 				let texto= document.getElementById("text-acercade").innerText;
@@ -80,7 +108,24 @@
 		</script>
 		<div class="card mat-card">
 			<div class="card-titles">
-				<h2>Acerca de</h2>
+				<h1>Experiencia</h1>
+				<table border="5">
+					<tr>
+						<th>Nombre Empresa</th>
+						<th>Puesto</th>
+						<th>Desde-Hasta</th>
+					</tr>
+					<tr>
+						<td>Prosegur</td>
+						<td>Recontadora</td>
+						<td>2011-2020</td>
+					</tr>
+					<tr>
+						<td>Disco S.A</td>
+						<td>Cajera</td>
+						<td>2006-2008</td>
+					</tr>
+				</table>
 			<div class="btn-edit" onclick="cambiar_parrafo()">
 				<a href="#" class="btn-right">
 					<i class="fa fa-pen"></i>
@@ -88,25 +133,19 @@
 			</div>
 			</div>
 		</div>
-			<p id="text-acercade"> Estamos transitando por un momento de alfabetización tecnologica en el mundo</p>
-		</div>
+		
+		
 		<div>
 			<input id="edit-acercade" type="text" oninput="myFunction2(this.value)" style="display:none">
 		</div>
 	</div>
 		<input type="file" id="file1" onchange="showFile(this)">
 
-	<div class="card mat-card"> <div id="Nombre"></div> </div>
+	<div class="card mat-card"> <div id="Nombre"><h2>nghjf</h2></div> </div>
 	<div class="card mat_card"> <div id="Apellido"></div> </div>
 	<div class="card mat_card"> <div id="Titulos"></div> </div>
 
-	<input tpye="file" id="file1" onchange="showFile1(this)">
-	<div id="info"	style= "padding: 16px"> </div>
-	<div id="info-actions">
-		<button type="button" class="btn btn-primary"> Tengo Interés en</button>
-		<button type="button" class="btn btn-light">Mis Habilidades son</button>
-		<button type="button" class="btn btn-light">Añadir sección</button>
-	</div>
+	
 	
 		<script>
 			function foo() {
